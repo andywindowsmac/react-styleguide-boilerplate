@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './HelloWorld.css';
+import './HelloWorld.scss';
 
 export interface Props {
     /**
