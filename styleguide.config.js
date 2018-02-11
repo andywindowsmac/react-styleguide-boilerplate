@@ -4,7 +4,7 @@ module.exports = {
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'src/theming/ThemeWrapper.tsx'),
   },
-  components: 'src/components/**/*.{ts,tsx}',
+  components: 'src/components/**/[A-Z]*.{ts,tsx}',
   propsParser: require('react-docgen-typescript').parse,
   webpackConfig: require('react-scripts-ts/config/webpack.config.dev.js'),
   ignore: [
