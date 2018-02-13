@@ -10,7 +10,7 @@ const {
   css,
   injectGlobal,
   keyframes,
-  ThemeProvider
+  ThemeProvider,
 } = styledComponents as ThemedStyledComponentsModule<ThemingInterface>;
 
 export { colorsMap, ThemeColorMap, ThemingInterface };

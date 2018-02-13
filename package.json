@@ -10,19 +10,9 @@
     "styled-components": "^3.1.6"
   },
   "scripts": {
-    "start-js": "react-scripts-ts start",
-    "start": "npm-run-all -p watch-sass-to-css start-js",
-    "build-js": "react-scripts-ts build",
-    "build": "npm-run-all -p build-sass-to-css build-js",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "copy-css-to-lib": "npm-run-all -s copy-base-css copy-component-css",
-    "copy-base-css": "cpx \"./src/**/*.css\" ./build/lib/",
-    "copy-component-css": "cpx \"./src/components/**/*.css\" ./build/lib/components",
-    "build-sass-to-css": "node-sass-chokidar src/ -o src/",
-    "watch-sass-to-css": "node-sass-chokidar src/ -o src/ --watch --recursive",
-    "styleguide": "npm-run-all -p watch-sass-to-css styleguidist",
-    "styleguidist": "styleguidist server",
+    "start": "styleguidist server",
     "styleguide-build": "styleguidist build"
   },
   "devDependencies": {
